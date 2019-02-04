@@ -1,170 +1,170 @@
-Field,Description,Unit,Data Type,Formula,Possible Values,Observed Max,Observed Min,Theoretical Min,Theoretical Max
-Unnamed: 0,Index,,Numeric,,,72537,0,,
-tile_count,total number of tiles in census tract,,Numeric,,,4468,0,0,
-solar_system_count,Total number of solar systems in census tract,,Numeric,,,1535,0,0,
-total_panel_area,,,Numeric,,,592031.075,0,0,
-fips,FIPS identifier for the census tract,,String,,,#N/A,#N/A,,
-average_household_income,Average income for the households in the census tract,USD,Numeric,,,537130.2158,6910.984848,0,
-county,Name of the county,,Factor,,,#N/A,#N/A,,
-education_bachelor,number of individuals in tract whose highest degree is bachelor's degree,,Numeric,,,12753,0,0,education_population
-education_college,number of individuals in tract who attended some college but didn't finish,,Numeric,,,12487,0,0,education_population
-education_doctoral,number of individuals in tract whose highest degree is doctorate,,Numeric,,,1395,0,0,education_population
-education_high_school_graduate,number of individuals in tract whose highest degree is high school diploma,,Numeric,,,8765,0,0,education_population
-education_less_than_high_school,number of individuals in tract who didn't finish high school,,Numeric,,,5453,0,0,education_population
-education_master,number of individuals in tract whose highest degree is master's degree,,Numeric,,,5341,0,0,education_population
-education_population,total population of tract for which education data is available,,Numeric,education_bachelor+education_college+education_doctoral+education_high_school_graduate+education_less_than_high_school+education_master+education_professional_school,,37461,0,0,
-education_professional_school,number of individuals in tract who attended professional school,,Numeric,,,1794,0,0,education_population
-employed,number of employed individuals,,Numeric,,,24075,0,0,population
-gini_index,measure of income inequality in a census tract,,Numeric,see https://en.wikipedia.org/wiki/Gini_coefficient,,0.8177,0.0007,0,1 (usually)
-heating_fuel_coal_coke,number of households who use coal for heat,,Numeric,,,1557,0,0,heating_fuel_housing_unit_count
-heating_fuel_electricity,number of households who use electricity for heat,,Numeric,,,11849,0,0,heating_fuel_housing_unit_count
-heating_fuel_fuel_oil_kerosene,number of households who use kerosene for heat,,Numeric,,,2888,0,0,heating_fuel_housing_unit_count
-heating_fuel_gas,number of households who use gas for heat,,Numeric,,,12362,0,0,heating_fuel_housing_unit_count
-heating_fuel_housing_unit_count,number of households for which heating fuel data is available,,Numeric,heating_fuel_coal_coke+heating_fuel_electricity+heating_fuel_fuel_oil_kerosene+heating_fuel_gas+heating_fuel_none+heating_fuel_other+heating_fuel_solar,,20395,0,0,population
-heating_fuel_none,number of households who don't have heat,,Numeric,,,2086,0,0,heating_fuel_housing_unit_count
-heating_fuel_other,number of households who use a different fuel for heat,,Numeric,,,1792,0,0,heating_fuel_housing_unit_count
-heating_fuel_solar,number of households who use solar power for heat,,Numeric,,,163,0,0,heating_fuel_housing_unit_count
-land_area,,,Numeric,,,9489.732,0,0,
-per_capita_income,per capita income of census tract,,Numeric,,,254204,128,0,
-population,population of census tract,,Numeric,,,53812,0,0,
-population_density,population density of census tract,,Numeric,,,454706.9,0,0,
-poverty_family_below_poverty_level,Number of families whose incomes are below the poverty level,,Numeric,,,1854,0,0,poverty_family_count
-poverty_family_count,Number of families considered in poverty analysis,,Numeric,,,14938,0,0,
-race_asian,number of asian individuals in census tract,,Numeric,,,12174,0,0,population
-race_black_africa,number of black individuals in census tract,,Numeric,,,18679,0,0,population
-race_indian_alaska,number of native american individuals in census tract,,Numeric,,,9275,0,0,population
-race_islander,number of pacific islander indivuals in census tract,,Numeric,,,1568,0,0,population
-race_other,number of individuals with other race in census tract,,Numeric,,,8793,0,0,population
-race_two_more,number of mixed-race individuals in census tract,,Numeric,,,3497,0,0,population
-race_white,number of white individuals in census tract,,Numeric,,,37166,0,0,population
-state,Two-letter state code,,Factor,,,#N/A,#N/A,,
-total_area,,,Numeric,,,9527.715,0.003204262,0,
-unemployed,Number of unemployed individuals in census tract,,Numeric,,,2295,0,0,population
-water_area,,,Numeric,,,4626.937,0,0,total_area
-education_less_than_high_school_rate,Proportion of education population that didn't finish high school,,Numeric,education_less_than_high_school/education_population,,1,0,0,1
-education_high_school_graduate_rate,Proportion of education population whose highest degree is high school diploma,,Numeric,education_high_school_graduate/education_population,,1,0,0,1
-education_college_rate,"Proportion of education population that attended some college, but didn't graduate",,Numeric,education_college/education_population,,1,0,0,1
-education_bachelor_rate,Proportion of education population whose highest degree is bachelor's degree,,Numeric,education_bachelor/education_population,,1,0,0,1
-education_master_rate,Proportion of education population whose highest degree is master's degree,,Numeric,education_master/education_population,,1,0,0,1
-education_professional_school_rate,Proportion of education population who attended professional school,,Numeric,education_professional_school/education_population,,1,0,0,1
-education_doctoral_rate,Proportion of education population whose highest degree is doctorate,,Numeric,education_doctoral/education_population,,1,0,0,1
-race_white_rate,Proportion of population that's white,,Numeric,race_white/population,,1,0,0,1
-race_black_africa_rate,Proportion of population that's black,,Numeric,race_black_africa/population,,1,0,0,1
-race_indian_alaska_rate,proportion of population that's native america,,Numeric,race_indian_alaska/population,,1,0,0,1
-race_asian_rate,proportion of population that's asian,,Numeric,race_asian/population,,0.913187541,0,0,1
-race_islander_rate,proportion of population that's pacific islander,,Numeric,race_islander/population,,0.24742268,0,0,1
-race_other_rate,proportion of population that's other race,,Numeric,race_other/population,,1,0,0,1
-race_two_more_rate,proportion of population that's mixed race,,Numeric,race_two_more/population,,1,0,0,1
-employ_rate,employed individuals as percentage of both employed an unemployed individuals,,Numeric,employed/(employed+unemployed),,1,0,0,1
-poverty_family_below_poverty_level_rate,proportion of families below poverty rate,,Numeric,poverty_family_below_poverty_level/poverty_family_count,,1,0,0,1
-heating_fuel_gas_rate,proportion of households with gas heating,,Numeric,heating_fuel_gas/heating_fuel_housing_unit_count,,1,0,0,1
-heating_fuel_electricity_rate,proportion of households with electricity heating,,Numeric,heating_fuel_electricity/heating_fuel_housing_unit_count,,1,0,0,1
-heating_fuel_fuel_oil_kerosene_rate,proportion of households with kerosene heating,,Numeric,heating_fuel_fuel_oil_kerosene/heating_fuel_housing_unit_count,,1,0,0,1
-heating_fuel_coal_coke_rate,proportion of households with coal heating,,Numeric,heating_fuel_coal_coke/heating_fuel_housing_unit_count,,1,0,0,1
-heating_fuel_solar_rate,proportion of households with solar heating,,Numeric,heating_fuel_solar/heating_fuel_housing_unit_count,,0.5,0,0,1
-heating_fuel_other_rate,proportion of households with other source of heating,,Numeric,heating_fuel_other/heating_fuel_housing_unit_count,,0.43567753,0,0,1
-heating_fuel_none_rate,proportion of households with no heating,,Numeric,heating_fuel_none/heating_fuel_housing_unit_count,,0.764943161,0,0,1
-solar_panel_area_divided_by_area,total residential panel area divided by total area,,Numeric,total_panel_area_residential/total_area,,16357.35798,0,0,
-solar_panel_area_per_capita,total residential panel area divided by population,,Numeric,total_panel_area_residential/population,,inf,0,0,
-tile_count_residential,total residential tiles in census tract,,Numeric,,,1795,0,0,tile_count
-tile_count_nonresidential,total nonresidential tiles in census tract,,Numeric,,,4434,0,0,tile_count
-solar_system_count_residential,total residential solar systems in census tract,,Numeric,,,1404,0,0,solar_system_count
-solar_system_count_nonresidential,total nonresidential solar systems in census tract,,Numeric,,,397,0,0,solar_system_count
-total_panel_area_residential,total residential panel area in census tract,,Numeric,,,40380.09985,0,0,total_panel_area
-total_panel_area_nonresidential,total nonresidential panel area in census tract,,Numeric,,,590852.24,0,0,total_panel_area
-median_household_income,median household income in census tract,USD,Numeric,,,250001,3271,0,
-electricity_price_residential,residential energy price,,Numeric,,,20.94,9.09,0,
-electricity_price_commercial,commercial energy price,,Numeric,,,15.97,7.68,0,
-electricity_price_industrial,industrial energy price,,Numeric,,,13.76,4.35,0,
-electricity_price_transportation,transportation energy price,,Numeric,,,9.92, ,0,
-electricity_price_overall,overall electricity price,,Numeric,,,17.77,7.4,0,
-electricity_consume_residential,,,Numeric,,,1286,556,0,
-electricity_consume_commercial,,,Numeric,,,26932,3125,0,
-electricity_consume_industrial,,,Numeric,,,19852667,14663,0,
-electricity_consume_total,,,Numeric,,,19880440,20802,0,
-household_count,number of households in tract,,Numeric,,,20395,0,0,
-average_household_size,,,Numeric,,,11,1.02,0,
-housing_unit_count,number of housing units in tract,,Numeric,,,25530,0,0,
-housing_unit_occupied_count,number of occupied housing units in tract,,Numeric,,,20395,0,0,housing_unit_count
-housing_unit_median_value,median value of housing units,USD,Numeric,,,2000001,9999,0,
-housing_unit_median_gross_rent,median gross rent of housing units,USD,Numeric,,,3501,111,0,
-lat,geographic latitude,latitude,Numeric,,,48.987,24.55,-90,90
-lon,geographic longitude,longitude,Numeric,,,-67.141,-124.69,-180,180
-elevation,elevation,,Numeric,,,2676,1,,
-heating_design_temperature,outdoor temperature that is exceeded during at least 99% of the hours in a typical weather year,Celcius,Numeric,,,17.65,-21.48,-273,
-cooling_design_temperature,outdoor temperature that is exceed only in only 1% of the hours in a typical weather year,Celcius,Numeric,,,36.65,18.78,-273,
-earth_temperature_amplitude,,,Numeric,,,28.04,1.67,,
-frost_days,number of days in which the minimum temperature falls below 0 Celcius,Celcius,Numeric,,,207,0,0,365
-air_temperature,average air temperature in census tract?,Celcius,Numeric,,,24.8,1.9,-273,
-relative_humidity,the amount of water vapor in the air as a percentage of the amount needed for saturation at the same temperature,,Numeric,,,0.802,0.328,0,1
-daily_solar_radiation,,,Numeric,,,5.68,3.3,,
-atmospheric_pressure,pressure exerted by the weight of the atmosphere,,Numeric,,,101.8,73.8,,
-wind_speed,average wind speed,,Numeric,,,6.6,2.8,0,
-earth_temperature,earth temperature,Celcius,Numeric,,,26.6,1.3,-273,
-heating_degree_days,see https://www.investopedia.com/terms/h/heatingdegreeday.asp,,Numeric,,,5897,9,,
-cooling_degree_days,see https://www.investopedia.com/terms/c/colddegreeday.asp,,Numeric,,,5407,436,,
-age_18_24_rate,proportion of population between the ages of 18 and 24,,Numeric,,,1,0,0,1
-age_25_34_rate,proportion of population between the ages of 25 and 34,,Numeric,,,1,0,0,1
-age_more_than_85_rate,proportion of population between the ages of more_than and 85,,Numeric,,,1,0,0,1
-age_75_84_rate,proportion of population between the ages of 75 and 84,,Numeric,,,1,0,0,1
-age_35_44_rate,proportion of population between the ages of 35 and 44,,Numeric,,,0.52173913,0,0,1
-age_45_54_rate,proportion of population between the ages of 45 and 54,,Numeric,,,1,0,0,1
-age_65_74_rate,proportion of population between the ages of 65 and 74,,Numeric,,,1,0,0,1
-age_55_64_rate,proportion of population between the ages of 55 and 64,,Numeric,,,1,0,0,1
-age_10_14_rate,proportion of population between the ages of 10 and 14,,Numeric,,,0.581818182,0,0,1
-age_15_17_rate,proportion of population between the ages of 15 and 17,,Numeric,,,0.636363636,0,0,1
-age_5_9_rate,proportion of population between the ages of 5 and 9,,Numeric,,,0.384615385,0,0,1
-household_type_family_rate,proportion of households that contain families,,Numeric,,,1,0,0,1
-dropout_16_19_inschool_rate,proportion of 16-19 year olds that are still in school,,Numeric,,,1,0,0,1
-occupation_construction_rate,proportion of the population that works in construction,,Numeric,,,0.875,0,0,1
-occupation_public_rate,proportion of the population that works in the public sector,,Numeric,,,1,0,0,1
-occupation_information_rate,proportion of the population that works in information,,Numeric,,,0.416666667,0,0,1
-occupation_finance_rate,proportion of the population that works in finance,,Numeric,,,1,0,0,1
-occupation_education_rate,proportion of the population that works in education,,Numeric,,,1,0,0,1
-occupation_administrative_rate,proportion of the population that works in administration,,Numeric,,,1,0,0,1
-occupation_manufacturing_rate,proportion of the population that works in manufacturing,,Numeric,,,1,0,0,1
-occupation_wholesale_rate,proportion of the population that works in wholesale,,Numeric,,,0.526315789,0,0,1
-occupation_retail_rate,proportion of the population that works in retail,,Numeric,,,1,0,0,1
-occupation_transportation_rate,proportion of the population that works in transportation,,Numeric,,,1,0,0,1
-occupation_arts_rate,proportion of the population that works in arts,,Numeric,,,1,0,0,1
-occupation_agriculture_rate,proportion of the population that works in agriculture,,Numeric,,,0.727272727,0,0,1
-occupancy_vacant_rate,proportion of households that are vacant,,Numeric,,,1,0,0,1
-occupancy_owner_rate,proportion of households in which the owner lives in the household,,Numeric,,,1,0,0,1
-mortgage_with_rate,proportion of households that have a mortgage,,Numeric,,,1,0,0,1
-transportation_home_rate,,,Numeric,,,1,0,0,1
-transportation_car_alone_rate,proportion of commuters that drive home alone,,Numeric,,,1,0,0,1
-transportation_walk_rate,proportion of commuters that walk home,,Numeric,,,1,0,0,1
-transportation_carpool_rate,proportion of commuters that carpool home,,Numeric,,,1,0,0,1
-transportation_motorcycle_rate,proportion of commuters that ride a motorcycle home,,Numeric,,,0.173913043,0,0,1
-transportation_bicycle_rate,proportion of commuters that ride a bicycle home,,Numeric,,,1,0,0,1
-transportation_public_rate,proportion of commuters that ride public transportation home,,Numeric,,,1,0,0,1
-travel_time_less_than_10_rate,proportion of commuters whose travel time is less than 10 minutes,,Numeric,,,1,0,0,1
-travel_time_10_19_rate,proportion of commuters whose travel time is between 10 and 19 minutes,,Numeric,,,1,0,0,1
-travel_time_20_29_rate,proportion of commuters whose travel time is between 20 and 29 minutes,,Numeric,,,1,0,0,1
-travel_time_30_39_rate,proportion of commuters whose travel time is between 30 and 39 minutes,,Numeric,,,1,0,0,1
-travel_time_40_59_rate,proportion of commuters whose travel time is between 40 and 59 minutes,,Numeric,,,1,0,0,1
-travel_time_60_89_rate,proportion of commuters whose travel time is between 60 and 89 minutes,,Numeric,,,1,0,0,1
-health_insurance_public_rate,proportion of the population that has public health insurance,,Numeric,,,1,0,0,1
-health_insurance_none_rate,proportion of the population that has no health insurance,,Numeric,,,1,0,0,1
-age_median,median age of the population,,Numeric,,,83.6,11.3,0,
-travel_time_average,Average commute time to work,minutes,Numeric,,,80,1,0,
-voting_2016_dem_percentage,proportion of the voting population that voted for democrats in 2016,,Numeric,,,0.928465919,0.031446541,0,1
-voting_2016_gop_percentage,proportion of the voting population that voted for republicans in 2016,,Numeric,,,0.952727273,0.041220671,0,1
-voting_2016_dem_win,boolean indicator of whether democratic candidates won the census tract in 2016,,Boolean,,,#N/A,#N/A,,
-voting_2012_dem_percentage,proportion of the voting population that voted for democrats in 2012,,Numeric,,,0.912,0.034,0,1
-voting_2012_gop_percentage,proportion of the voting population that voted for republicans in 2012,,Numeric,,,0.959,0.083,0,1
-voting_2012_dem_win,boolean indicator of whether democratic candidates won the census tract in 2012,,Boolean,,,#N/A,#N/A,,
-number_of_years_of_education,average number of years of education in the tract,,Numeric,,,21,8,0,
-diversity,proportion of the tract that would be considered diverse,,Numeric,,,0.81244124,0,0,1
-number_of_solar_system_per_household,number of residential solar systems per household,,Numeric,solar_system_count_residential/household_count,,inf,0,0,
-incentive_count_residential,,,Numeric,,,75,8,0,
-incentive_count_nonresidential,,,Numeric,,,85,14,0,
-incentive_residential_state_level,,,Numeric,,,17,1,0,
-incentive_nonresidential_state_level,,,Numeric,,,22,2,0,
-net_metering,measure of the net metering in the census tract,,Numeric,,,35,0,0,
-feedin_tariff,measure of the feedin tariffs in the tract,,Numeric,,,11,0,0,
-cooperate_tax,corporate tax rate for the tract,,Numeric,,,16,0,0,100
-property_tax,property tax rate for the tract,,Numeric,,,42,0,0,100
-sales_tax,sales tax rate for the tract,,Numeric,,,40,0,0,100
-rebate,measure of the solar energy rebate in the tract,,Numeric,,,14,0,0,
-avg_electricity_retail_rate,average electricity retail cost in the tract,,Numeric,,,16.65,7.25,0,
+Field,Description,Unit,Data Type,Formula,Possible Values,Observed Max,Observed Min,Theoretical Min,Theoretical Max,Relevant Feature,
+Unnamed: 0,Index,,Numeric,,,72537,0,,,0,119
+tile_count,total number of tiles in census tract,,Numeric,,,4468,0,0,,0,
+solar_system_count,Total number of solar systems in census tract,,Numeric,,,1535,0,0,,0,
+total_panel_area,,,Numeric,,,592031.075,0,0,,0,
+fips,FIPS identifier for the census tract,,String,,,#N/A,#N/A,,,0,
+average_household_income,Average income for the households in the census tract,USD,Numeric,,,537130.2158,6910.984848,0,,0,
+county,Name of the county,,Factor,,,#N/A,#N/A,,,0,
+education_bachelor,number of individuals in tract whose highest degree is bachelor's degree,,Numeric,,,12753,0,0,education_population,0,
+education_college,number of individuals in tract who attended some college but didn't finish,,Numeric,,,12487,0,0,education_population,0,
+education_doctoral,number of individuals in tract whose highest degree is doctorate,,Numeric,,,1395,0,0,education_population,0,
+education_high_school_graduate,number of individuals in tract whose highest degree is high school diploma,,Numeric,,,8765,0,0,education_population,0,
+education_less_than_high_school,number of individuals in tract who didn't finish high school,,Numeric,,,5453,0,0,education_population,0,
+education_master,number of individuals in tract whose highest degree is master's degree,,Numeric,,,5341,0,0,education_population,0,
+education_population,total population of tract for which education data is available,,Numeric,education_bachelor+education_college+education_doctoral+education_high_school_graduate+education_less_than_high_school+education_master+education_professional_school,,37461,0,0,,0,
+education_professional_school,number of individuals in tract who attended professional school,,Numeric,,,1794,0,0,education_population,0,
+employed,number of employed individuals,,Numeric,,,24075,0,0,population,0,
+gini_index,measure of income inequality in a census tract,,Numeric,see https://en.wikipedia.org/wiki/Gini_coefficient,,0.8177,0.0007,0,1 (usually),1,
+heating_fuel_coal_coke,number of households who use coal for heat,,Numeric,,,1557,0,0,heating_fuel_housing_unit_count,0,
+heating_fuel_electricity,number of households who use electricity for heat,,Numeric,,,11849,0,0,heating_fuel_housing_unit_count,0,
+heating_fuel_fuel_oil_kerosene,number of households who use kerosene for heat,,Numeric,,,2888,0,0,heating_fuel_housing_unit_count,0,
+heating_fuel_gas,number of households who use gas for heat,,Numeric,,,12362,0,0,heating_fuel_housing_unit_count,0,
+heating_fuel_housing_unit_count,number of households for which heating fuel data is available,,Numeric,heating_fuel_coal_coke+heating_fuel_electricity+heating_fuel_fuel_oil_kerosene+heating_fuel_gas+heating_fuel_none+heating_fuel_other+heating_fuel_solar,,20395,0,0,population,0,
+heating_fuel_none,number of households who don't have heat,,Numeric,,,2086,0,0,heating_fuel_housing_unit_count,0,
+heating_fuel_other,number of households who use a different fuel for heat,,Numeric,,,1792,0,0,heating_fuel_housing_unit_count,0,
+heating_fuel_solar,number of households who use solar power for heat,,Numeric,,,163,0,0,heating_fuel_housing_unit_count,0,
+land_area,,,Numeric,,,9489.732,0,0,,0,
+per_capita_income,per capita income of census tract,,Numeric,,,254204,128,0,,1,
+population,population of census tract,,Numeric,,,53812,0,0,,0,
+population_density,population density of census tract,,Numeric,,,454706.9,0,0,,1,
+poverty_family_below_poverty_level,Number of families whose incomes are below the poverty level,,Numeric,,,1854,0,0,poverty_family_count,0,
+poverty_family_count,Number of families considered in poverty analysis,,Numeric,,,14938,0,0,,0,
+race_asian,number of asian individuals in census tract,,Numeric,,,12174,0,0,population,0,
+race_black_africa,number of black individuals in census tract,,Numeric,,,18679,0,0,population,0,
+race_indian_alaska,number of native american individuals in census tract,,Numeric,,,9275,0,0,population,0,
+race_islander,number of pacific islander indivuals in census tract,,Numeric,,,1568,0,0,population,0,
+race_other,number of individuals with other race in census tract,,Numeric,,,8793,0,0,population,0,
+race_two_more,number of mixed-race individuals in census tract,,Numeric,,,3497,0,0,population,0,
+race_white,number of white individuals in census tract,,Numeric,,,37166,0,0,population,0,
+state,Two-letter state code,,Factor,,,#N/A,#N/A,,,1,
+total_area,,,Numeric,,,9527.715,0.003204262,0,,0,
+unemployed,Number of unemployed individuals in census tract,,Numeric,,,2295,0,0,population,0,
+water_area,,,Numeric,,,4626.937,0,0,total_area,0,
+education_less_than_high_school_rate,Proportion of education population that didn't finish high school,,Numeric,education_less_than_high_school/education_population,,1,0,0,1,1,
+education_high_school_graduate_rate,Proportion of education population whose highest degree is high school diploma,,Numeric,education_high_school_graduate/education_population,,1,0,0,1,1,
+education_college_rate,"Proportion of education population that attended some college, but didn't graduate",,Numeric,education_college/education_population,,1,0,0,1,1,
+education_bachelor_rate,Proportion of education population whose highest degree is bachelor's degree,,Numeric,education_bachelor/education_population,,1,0,0,1,1,
+education_master_rate,Proportion of education population whose highest degree is master's degree,,Numeric,education_master/education_population,,1,0,0,1,1,
+education_professional_school_rate,Proportion of education population who attended professional school,,Numeric,education_professional_school/education_population,,1,0,0,1,1,
+education_doctoral_rate,Proportion of education population whose highest degree is doctorate,,Numeric,education_doctoral/education_population,,1,0,0,1,1,
+race_white_rate,Proportion of population that's white,,Numeric,race_white/population,,1,0,0,1,1,
+race_black_africa_rate,Proportion of population that's black,,Numeric,race_black_africa/population,,1,0,0,1,1,
+race_indian_alaska_rate,proportion of population that's native america,,Numeric,race_indian_alaska/population,,1,0,0,1,1,
+race_asian_rate,proportion of population that's asian,,Numeric,race_asian/population,,0.913187541,0,0,1,1,
+race_islander_rate,proportion of population that's pacific islander,,Numeric,race_islander/population,,0.24742268,0,0,1,1,
+race_other_rate,proportion of population that's other race,,Numeric,race_other/population,,1,0,0,1,1,
+race_two_more_rate,proportion of population that's mixed race,,Numeric,race_two_more/population,,1,0,0,1,1,
+employ_rate,employed individuals as percentage of both employed an unemployed individuals,,Numeric,employed/(employed+unemployed),,1,0,0,1,1,
+poverty_family_below_poverty_level_rate,proportion of families below poverty rate,,Numeric,poverty_family_below_poverty_level/poverty_family_count,,1,0,0,1,1,
+heating_fuel_gas_rate,proportion of households with gas heating,,Numeric,heating_fuel_gas/heating_fuel_housing_unit_count,,1,0,0,1,1,
+heating_fuel_electricity_rate,proportion of households with electricity heating,,Numeric,heating_fuel_electricity/heating_fuel_housing_unit_count,,1,0,0,1,1,
+heating_fuel_fuel_oil_kerosene_rate,proportion of households with kerosene heating,,Numeric,heating_fuel_fuel_oil_kerosene/heating_fuel_housing_unit_count,,1,0,0,1,1,
+heating_fuel_coal_coke_rate,proportion of households with coal heating,,Numeric,heating_fuel_coal_coke/heating_fuel_housing_unit_count,,1,0,0,1,1,
+heating_fuel_solar_rate,proportion of households with solar heating,,Numeric,heating_fuel_solar/heating_fuel_housing_unit_count,,0.5,0,0,1,1,
+heating_fuel_other_rate,proportion of households with other source of heating,,Numeric,heating_fuel_other/heating_fuel_housing_unit_count,,0.43567753,0,0,1,1,
+heating_fuel_none_rate,proportion of households with no heating,,Numeric,heating_fuel_none/heating_fuel_housing_unit_count,,0.764943161,0,0,1,1,
+solar_panel_area_divided_by_area,total residential panel area divided by total area,,Numeric,total_panel_area_residential/total_area,,16357.35798,0,0,,0,
+solar_panel_area_per_capita,total residential panel area divided by population,,Numeric,total_panel_area_residential/population,,inf,0,0,,0,
+tile_count_residential,total residential tiles in census tract,,Numeric,,,1795,0,0,tile_count,0,
+tile_count_nonresidential,total nonresidential tiles in census tract,,Numeric,,,4434,0,0,tile_count,0,
+solar_system_count_residential,total residential solar systems in census tract,,Numeric,,,1404,0,0,solar_system_count,0,
+solar_system_count_nonresidential,total nonresidential solar systems in census tract,,Numeric,,,397,0,0,solar_system_count,0,
+total_panel_area_residential,total residential panel area in census tract,,Numeric,,,40380.09985,0,0,total_panel_area,0,
+total_panel_area_nonresidential,total nonresidential panel area in census tract,,Numeric,,,590852.24,0,0,total_panel_area,0,
+median_household_income,median household income in census tract,USD,Numeric,,,250001,3271,0,,1,
+electricity_price_residential,residential energy price,,Numeric,,,20.94,9.09,0,,1,
+electricity_price_commercial,commercial energy price,,Numeric,,,15.97,7.68,0,,1,
+electricity_price_industrial,industrial energy price,,Numeric,,,13.76,4.35,0,,1,
+electricity_price_transportation,transportation energy price,,Numeric,,,9.92, ,0,,1,
+electricity_price_overall,overall electricity price,,Numeric,,,17.77,7.4,0,,1,
+electricity_consume_residential,,,Numeric,,,1286,556,0,,1,
+electricity_consume_commercial,,,Numeric,,,26932,3125,0,,1,
+electricity_consume_industrial,,,Numeric,,,19852667,14663,0,,1,
+electricity_consume_total,,,Numeric,,,19880440,20802,0,,1,
+household_count,number of households in tract,,Numeric,,,20395,0,0,,0,
+average_household_size,,,Numeric,,,11,1.02,0,,1,
+housing_unit_count,number of housing units in tract,,Numeric,,,25530,0,0,,0,
+housing_unit_occupied_count,number of occupied housing units in tract,,Numeric,,,20395,0,0,housing_unit_count,0,
+housing_unit_median_value,median value of housing units,USD,Numeric,,,2000001,9999,0,,1,
+housing_unit_median_gross_rent,median gross rent of housing units,USD,Numeric,,,3501,111,0,,1,
+lat,geographic latitude,latitude,Numeric,,,48.987,24.55,-90,90,1,
+lon,geographic longitude,longitude,Numeric,,,-67.141,-124.69,-180,180,1,
+elevation,elevation,,Numeric,,,2676,1,,,1,
+heating_design_temperature,outdoor temperature that is exceeded during at least 99% of the hours in a typical weather year,Celcius,Numeric,,,17.65,-21.48,-273,,1,
+cooling_design_temperature,outdoor temperature that is exceed only in only 1% of the hours in a typical weather year,Celcius,Numeric,,,36.65,18.78,-273,,1,
+earth_temperature_amplitude,,,Numeric,,,28.04,1.67,,,1,
+frost_days,number of days in which the minimum temperature falls below 0 Celcius,Celcius,Numeric,,,207,0,0,365,1,
+air_temperature,average air temperature in census tract?,Celcius,Numeric,,,24.8,1.9,-273,,1,
+relative_humidity,the amount of water vapor in the air as a percentage of the amount needed for saturation at the same temperature,,Numeric,,,0.802,0.328,0,1,1,
+daily_solar_radiation,,,Numeric,,,5.68,3.3,,,1,
+atmospheric_pressure,pressure exerted by the weight of the atmosphere,,Numeric,,,101.8,73.8,,,1,
+wind_speed,average wind speed,,Numeric,,,6.6,2.8,0,,1,
+earth_temperature,earth temperature,Celcius,Numeric,,,26.6,1.3,-273,,1,
+heating_degree_days,see https://www.investopedia.com/terms/h/heatingdegreeday.asp,,Numeric,,,5897,9,,,1,
+cooling_degree_days,see https://www.investopedia.com/terms/c/colddegreeday.asp,,Numeric,,,5407,436,,,1,
+age_18_24_rate,proportion of population between the ages of 18 and 24,,Numeric,,,1,0,0,1,1,
+age_25_34_rate,proportion of population between the ages of 25 and 34,,Numeric,,,1,0,0,1,1,
+age_more_than_85_rate,proportion of population between the ages of more_than and 85,,Numeric,,,1,0,0,1,1,
+age_75_84_rate,proportion of population between the ages of 75 and 84,,Numeric,,,1,0,0,1,1,
+age_35_44_rate,proportion of population between the ages of 35 and 44,,Numeric,,,0.52173913,0,0,1,1,
+age_45_54_rate,proportion of population between the ages of 45 and 54,,Numeric,,,1,0,0,1,1,
+age_65_74_rate,proportion of population between the ages of 65 and 74,,Numeric,,,1,0,0,1,1,
+age_55_64_rate,proportion of population between the ages of 55 and 64,,Numeric,,,1,0,0,1,1,
+age_10_14_rate,proportion of population between the ages of 10 and 14,,Numeric,,,0.581818182,0,0,1,1,
+age_15_17_rate,proportion of population between the ages of 15 and 17,,Numeric,,,0.636363636,0,0,1,1,
+age_5_9_rate,proportion of population between the ages of 5 and 9,,Numeric,,,0.384615385,0,0,1,1,
+household_type_family_rate,proportion of households that contain families,,Numeric,,,1,0,0,1,1,
+dropout_16_19_inschool_rate,proportion of 16-19 year olds that are still in school,,Numeric,,,1,0,0,1,1,
+occupation_construction_rate,proportion of the population that works in construction,,Numeric,,,0.875,0,0,1,1,
+occupation_public_rate,proportion of the population that works in the public sector,,Numeric,,,1,0,0,1,1,
+occupation_information_rate,proportion of the population that works in information,,Numeric,,,0.416666667,0,0,1,1,
+occupation_finance_rate,proportion of the population that works in finance,,Numeric,,,1,0,0,1,1,
+occupation_education_rate,proportion of the population that works in education,,Numeric,,,1,0,0,1,1,
+occupation_administrative_rate,proportion of the population that works in administration,,Numeric,,,1,0,0,1,1,
+occupation_manufacturing_rate,proportion of the population that works in manufacturing,,Numeric,,,1,0,0,1,1,
+occupation_wholesale_rate,proportion of the population that works in wholesale,,Numeric,,,0.526315789,0,0,1,1,
+occupation_retail_rate,proportion of the population that works in retail,,Numeric,,,1,0,0,1,1,
+occupation_transportation_rate,proportion of the population that works in transportation,,Numeric,,,1,0,0,1,1,
+occupation_arts_rate,proportion of the population that works in arts,,Numeric,,,1,0,0,1,1,
+occupation_agriculture_rate,proportion of the population that works in agriculture,,Numeric,,,0.727272727,0,0,1,1,
+occupancy_vacant_rate,proportion of households that are vacant,,Numeric,,,1,0,0,1,1,
+occupancy_owner_rate,proportion of households in which the owner lives in the household,,Numeric,,,1,0,0,1,1,
+mortgage_with_rate,proportion of households that have a mortgage,,Numeric,,,1,0,0,1,1,
+transportation_home_rate,,,Numeric,,,1,0,0,1,1,
+transportation_car_alone_rate,proportion of commuters that drive home alone,,Numeric,,,1,0,0,1,1,
+transportation_walk_rate,proportion of commuters that walk home,,Numeric,,,1,0,0,1,1,
+transportation_carpool_rate,proportion of commuters that carpool home,,Numeric,,,1,0,0,1,1,
+transportation_motorcycle_rate,proportion of commuters that ride a motorcycle home,,Numeric,,,0.173913043,0,0,1,1,
+transportation_bicycle_rate,proportion of commuters that ride a bicycle home,,Numeric,,,1,0,0,1,1,
+transportation_public_rate,proportion of commuters that ride public transportation home,,Numeric,,,1,0,0,1,1,
+travel_time_less_than_10_rate,proportion of commuters whose travel time is less than 10 minutes,,Numeric,,,1,0,0,1,1,
+travel_time_10_19_rate,proportion of commuters whose travel time is between 10 and 19 minutes,,Numeric,,,1,0,0,1,1,
+travel_time_20_29_rate,proportion of commuters whose travel time is between 20 and 29 minutes,,Numeric,,,1,0,0,1,1,
+travel_time_30_39_rate,proportion of commuters whose travel time is between 30 and 39 minutes,,Numeric,,,1,0,0,1,1,
+travel_time_40_59_rate,proportion of commuters whose travel time is between 40 and 59 minutes,,Numeric,,,1,0,0,1,1,
+travel_time_60_89_rate,proportion of commuters whose travel time is between 60 and 89 minutes,,Numeric,,,1,0,0,1,1,
+health_insurance_public_rate,proportion of the population that has public health insurance,,Numeric,,,1,0,0,1,1,
+health_insurance_none_rate,proportion of the population that has no health insurance,,Numeric,,,1,0,0,1,1,
+age_median,median age of the population,,Numeric,,,83.6,11.3,0,,1,
+travel_time_average,Average commute time to work,minutes,Numeric,,,80,1,0,,1,
+voting_2016_dem_percentage,proportion of the voting population that voted for democrats in 2016,,Numeric,,,0.928465919,0.031446541,0,1,1,
+voting_2016_gop_percentage,proportion of the voting population that voted for republicans in 2016,,Numeric,,,0.952727273,0.041220671,0,1,1,
+voting_2016_dem_win,boolean indicator of whether democratic candidates won the census tract in 2016,,Boolean,,,#N/A,#N/A,,,1,
+voting_2012_dem_percentage,proportion of the voting population that voted for democrats in 2012,,Numeric,,,0.912,0.034,0,1,1,
+voting_2012_gop_percentage,proportion of the voting population that voted for republicans in 2012,,Numeric,,,0.959,0.083,0,1,1,
+voting_2012_dem_win,boolean indicator of whether democratic candidates won the census tract in 2012,,Boolean,,,#N/A,#N/A,,,1,
+number_of_years_of_education,average number of years of education in the tract,,Numeric,,,21,8,0,,1,
+diversity,proportion of the tract that would be considered diverse,,Numeric,,,0.81244124,0,0,1,1,
+number_of_solar_system_per_household,number of residential solar systems per household,,Numeric,solar_system_count_residential/household_count,,inf,0,0,,0,
+incentive_count_residential,,,Numeric,,,75,8,0,,1,
+incentive_count_nonresidential,,,Numeric,,,85,14,0,,1,
+incentive_residential_state_level,,,Numeric,,,17,1,0,,1,
+incentive_nonresidential_state_level,,,Numeric,,,22,2,0,,1,
+net_metering,measure of the net metering in the census tract,,Numeric,,,35,0,0,,1,
+feedin_tariff,measure of the feedin tariffs in the tract,,Numeric,,,11,0,0,,1,
+cooperate_tax,corporate tax rate for the tract,,Numeric,,,16,0,0,100,1,
+property_tax,property tax rate for the tract,,Numeric,,,42,0,0,100,1,
+sales_tax,sales tax rate for the tract,,Numeric,,,40,0,0,100,1,
+rebate,measure of the solar energy rebate in the tract,,Numeric,,,14,0,0,,1,
+avg_electricity_retail_rate,average electricity retail cost in the tract,,Numeric,,,16.65,7.25,0,,1,
