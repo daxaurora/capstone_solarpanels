@@ -5,7 +5,7 @@ solar_system_count,Total number of solar systems in census tract,,Numeric,,,1535
 total_panel_area,,,Numeric,,,592031.075,0,0,,0
 fips,FIPS identifier for the census tract,,String,,,#N/A,#N/A,,,0
 average_household_income,Average income for the households in the census tract,USD,Numeric,,,537130.2158,6910.984848,0,,1
-county,Name of the county,,Factor,,,#N/A,#N/A,,,1
+county,Name of the county,,Factor,,,#N/A,#N/A,,,0
 education_bachelor,number of individuals in tract whose highest degree is bachelor's degree,,Numeric,,,12753,0,0,education_population,0
 education_college,number of individuals in tract who attended some college but didn't finish,,Numeric,,,12487,0,0,education_population,0
 education_doctoral,number of individuals in tract whose highest degree is doctorate,,Numeric,,,1395,0,0,education_population,0
