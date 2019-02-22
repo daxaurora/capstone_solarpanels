@@ -15,7 +15,7 @@ Log onto the Spark cluster from the gateway server like this:
 ``ssh root@spark1
 ``
 
-Get the most recent version of the repo before starting Jupyter notebook:  
+Pull the most recent version of the repo before starting Jupyter notebook:  
 ``cd capstone_solarpanels/``  
 ``git pull``  
 ``cd ..``  
@@ -30,7 +30,7 @@ Copy and paste the https link (including the token) into your browser.
 
 You'll see the project repo and a notebook testing folder on the root directory of the spark1 server.
 
-See more details in the sections below.
+See more details and explanation in the sections below.
 
 ## Gateway Server
 There is a small virtual server (in IBM's Softlayer Cloud Service) set up for creating and accessing other virtual servers with computing environments (i.e., Spark) that we'll set up and design ourselves. Team members can log into the gateway server using ssh at command prompt from their personal computer:  
@@ -71,15 +71,13 @@ You'll see onscreen instructions with an https link, including a token at the en
 You can shut down Jupyter as you normally would with Control-C.
 
 It's also possible to open a pyspark shell on the spark1 server independently from Jupyter Notebook:  
-``$SPARK_HOME/bin/pyspark``
+``pyspark``
 
 Software versions:  
-Spark 2.4.0
-Java 1.8.0_191
+Spark 2.4.0  
+Java 1.8.0_191  
 Python 3.7.1  
 Anaconda 4.6.4  
-
-NOTE:  I haven't tested running any of the notebooks in Spark yet, I've only confirmed that Jupyter works and that Spark is running.  I may need to set up some other environment variables for Jupyter to connect with pyspark. --Laura (Sunday night 2/17)
 
 Spark will be kept running on the cluster so there should be no need to stop or start it.  However, if needed, here are some commands for stopping and starting Spark on the cluster. Run all commands from the `spark1` server, there is no need to connect to any of the slave servers in the cluster.  
 
@@ -101,7 +99,7 @@ The project repo is on there on the /root directory.  I set up the network ssh k
 
 There is a basic .gitignore file to prevent ipynb checkpoint files from being pushed to the Github repo.  This .gitignore file is NOT intended to be pushed to the GitHub repo, only for working with the cluster repo.
 
-Given that this copy of the repo is essentially shared, aim to follow these instructions to keep our project files organized:
+Given that this copy of the repo is essentially shared, aim to follow these instructions to keep our repo files organized:
 
 * The version of the repo on GitHub (not the version on the cluster) will be the ground truth for current versions of files.
 * Always `git pull` the most recent version of the Github repo before working on files in the cluster.
@@ -119,7 +117,7 @@ To terminate server connections, type `exit` at the command prompt for each conn
 
 There is a separate ssh keypair for connecting between the gateway machine and the Spark cluster, and also between the spark nodes.
 
-The ssh connections between all servers in this private network are set to disconnect after 12 hours of inactivity.
+The ssh connections between all servers in this private network are set to disconnect after 12 hours of inactivity.  [NOTE: I'm still having some intermittent ssh connections closed before I want them to be, but I think that may be a problem with my personal internet connection instead.  --Laura]
 
 If needed, the IP addresses and names of all servers can be found using slcli commands from the gateway server (see the Gateway Server section above).
 
