@@ -1,4 +1,4 @@
-# Infrastructure and Environment
+  # Infrastructure and Environment
 ### Berkeley MIDS Capstone Spring 2019 | Predicting Solar Panel Adoption
 __`Team: Noah Levy, Gabriel Hudson, Laura Williams`__  
 
@@ -7,8 +7,10 @@ __`Team: Noah Levy, Gabriel Hudson, Laura Williams`__
 
 Team members can log onto the gateway server like this:  
 
-`` ssh root@169.63.216.242
+`` ssh root@<IP Address>
 ``  
+
+IP Address is pinned in our private Slack channel.
 
 Log onto the Spark cluster from the gateway server like this:  
 
@@ -19,8 +21,6 @@ Pull the most recent version of the repo before starting Jupyter notebook:
 ``cd capstone_solarpanels/``  
 ``git pull``  
 ``cd ..``  
-
-**Optional**: copy notebooks into the notebook_testing directory unless you plan to push notebook changes directly from the repo. Copying can be done before opening Jupyter or inside Jupyter (Duplicate and Move).
 
 Start Jupyter Notebook on the Spark cluster from the root directory:
 
@@ -34,10 +34,14 @@ See more details and explanation in the sections below.
 
 ## Gateway Server
 There is a small virtual server (in IBM's Softlayer Cloud Service) set up for creating and accessing other virtual servers with computing environments (i.e., Spark) that we'll set up and design ourselves. Team members can log into the gateway server using ssh at command prompt from their personal computer:  
-`` ssh root@169.63.216.242
+`` ssh root@<IP Address>
 ``  
 
+IP Address is pinned in our private slack channel.
+
 For security, this gateway server will only be accessible using ssh key pairs.  Password access will be turned off.
+
+We can give course instructors access to this cluster if they send one of us a copy of their public ssh key.
 
 The gateway server has only a very basic setup:  Centos 7 OS, Python 2.7, and the slcli client for provisioning servers on the IBM Softlayer Cloud.
 
@@ -89,27 +93,29 @@ Spark will be kept running on the cluster so there should be no need to stop or 
 `$SPARK_HOME/sbin/stop-all.sh` - Stops both the master and the slaves
 
 When the cluster is active, you should be able to see its activity from any browser by navigating here:    
-``http://169.63.216.247:8080``
+``http://<IP Address of Spark1 server>:8080``
+
+You can get the IP address of the spark1 server by typing this while logged into that server:  
+``hostname -I
+``
+The public IP address for the spark1 server starts with the same 3 digits as the IP address for the gateway server.
 
 NOTE: Because the spark cluster slaves are communicating via private IPs, it's not possible to navigate to them  separately right now, only to the master node at the above link. I'll do what I can to fix that if we want to be able to use the Spark UI.  --Laura
 
 ## Project Repo
 
-The project repo is on there on the /root directory.  I set up the network ssh key so it's possible to push and pull to/from the GitHub repo.
+The project repo is on on the spark1 server on the /root directory.  I set up the network ssh key so it's possible to push and pull to/from the GitHub repo.
 
 There is a basic .gitignore file to prevent ipynb checkpoint files from being pushed to the Github repo.  This .gitignore file is NOT intended to be pushed to the GitHub repo, only for working with the cluster repo.
 
-Given that this copy of the repo is essentially shared, aim to follow these instructions to keep our repo files organized:
+Given that this copy of the repo is essentially shared, be extra careful to not write over anyone else's work when pushing to GitHub. In particular:
 
 * The version of the repo on GitHub (not the version on the cluster) will be the ground truth for current versions of files.
 * Always `git pull` the most recent version of the Github repo before working on files in the cluster.
-* **Optional:**  Before opening any notebooks, copy them to the notebook_testing folder. A copy of the original dataset is kept in that folder.  
-* Continue to only make changes to our own working notebooks, not anyone else's notebooks.
-* To push any changes to notebooks back to the GitHub repo, copy the notebook back to the project repo on the cluster (if copied first to the notebook_testing folder), and push it up from there.
-* Always delete notebooks from the notebook_testing folder when done. (But not the dataset)
+* There is a notebook_testing folder in the /root directory that can be used for working with notebooks outside the repo.
+* It's of course also possible to create your own branch of the repo on the cluster and work in that until you are ready to push your changes.  
+* Continue to only make changes to each of our own working notebooks, not anyone else's notebooks.
 * There is a backup of the original dataset on the /root directory of both the gateway server and the spark1 server.
-
-If anyone has a better idea about how to manage this, please suggest it!
 
 
 ## General Information
@@ -117,7 +123,7 @@ To terminate server connections, type `exit` at the command prompt for each conn
 
 There is a separate ssh keypair for connecting between the gateway machine and the Spark cluster, and also between the spark nodes.
 
-The ssh connections between all servers in this private network are set to disconnect after 12 hours of inactivity.  [NOTE: I'm still having some intermittent ssh connections closed before I want them to be, but I think that may be a problem with my personal internet connection instead.  --Laura]
+The ssh connections between all servers in this private network are set to disconnect after a maximum of 12 hours of inactivity. 
 
 If needed, the IP addresses and names of all servers can be found using slcli commands from the gateway server (see the Gateway Server section above).
 
