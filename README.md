@@ -8,7 +8,14 @@ We were motivated toward this project by our interest in reducing carbon emissio
 ## Open Tool with Geographic and Feature Analysis
 We've created an interactive visualization of our results, focussing in particular on identifying geographic areas (as census tracts) that have high values of predictive factors driving residential solar panel adoption, but instead are under-saturated relative to our predictions. We've visualized general predictions for the continental United States and several state maps allow exploration of over 100 potentially predictive factors for every census tract in that state.
 
-**_[Add link(s) to viz here]_**
+Links for files used for live demo:
+https://public.tableau.com/profile/gabriel.hudson#!/vizhome/fullworkbook/Dashboard1?publish=yes
+https://public.tableau.com/profile/gabriel.hudson#!/vizhome/statefile_mass/Dashboard1
+https://public.tableau.com/profile/gabriel.hudson#!/vizhome/statefile_fla/Dashboard1
+https://public.tableau.com/profile/gabriel.hudson#!/vizhome/statefile_cal/Dashboard1
+
+Link to full US map containing all data (workbook can be downloaded for use):
+https://public.tableau.com/profile/gabriel.hudson#!/vizhome/allstates_alldata/Dashboard1?publish=yes
 
 ## Data Source
 We started with a recently released dataset from Stanford's DeepSolar team, who identified 1.47 million solar panel systems in the US using satellite imagery and their convolutional neural network.  Their dataset additionally included over 150 other variables to explore relative to solar panel systems.  Their work is described in more detail here: [DeepSolar](http://web.stanford.edu/group/deepsolar/home "DeepSolar")
